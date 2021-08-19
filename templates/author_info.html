@@ -1,0 +1,9 @@
+<div class="author-info">
+    <a class="post-link" href="{{ url_for('user_app.user_detail', user_id=post.user.id)}}">
+        <img class="post-author-img" src={{ post.user.userpic }}>
+    </a>
+
+    <a class="post-link" href="{{ url_for('user_app.user_detail', user_id=post.user.id) }}">
+    <h2 class=post-author>{{ post.user.name }} {{ post.user.surname }}</h2>
+    </a>
+</div>

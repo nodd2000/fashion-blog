@@ -1,0 +1,56 @@
+{% extends './posts/post_base.html' %}
+
+{% block title %}
+    {{ post.title }}
+{% endblock %}
+
+{% block content %}
+    {% block post_info %}
+        {{ super() }}
+    {% endblock %}
+
+    <div class="info-blocks">
+        <div class="info-block">
+            <p class="post-text">
+                Бренд Helmut Lang запустил проект Helmut At Home. В нем друзья бренда и вдохновляющие люди показывают, как проводят карантин.
+            </p>
+            <p class="post-text">
+                В проекте приняли участие Таня и Женя Постернак, сестры-фотографы из Киева, которые живут и работают в Нью-Йорке.
+                Для Helmut Lang они сняли серию фотографий с полупрозрачным голубым свитером.
+            </p>
+            <p class="post-text">
+                Сестры известны по работам для бренда Mansur Gavriel. Они также снимают для американского Vogue и The New York Times.
+                Для Allure они сняли обложку с теннисисткой Сереной Уильямс.
+            </p>
+
+            <p class="post-text">
+                Ранее в проекте Helmut At Home приняли участие модели Лили Самнер и Анин ван Вельцен и актер Нико Хирага.
+                Лили поделилась книгами, которые успела прочитать в изоляции,
+                а Нико показал, как занимается скейтбордингом на террасе и проводит время с собакой.
+            </p>
+
+        </div>
+
+        <div class="info-block">
+            <img class=post-image src="https://vision-assistant.netlify.app//img/helmut-lang-home-pasternak/helmut-at-home-posternak-01.jpg" alt="Photo for Helmut at home">
+        </div>
+
+        <div class="info-block">
+            <img class=post-image src="https://vision-assistant.netlify.app//img/helmut-lang-home-pasternak/helmut-lang-main.jpg" alt="Photo for Helmut at home">
+        </div>
+
+        <div class="info-block">
+            <img class=post-image src="https://vision-assistant.netlify.app//img/helmut-lang-home-pasternak/photo_2021-03-01_20-44-56.jpg" alt="Photo for Helmut at home">
+        </div>
+
+        <div class="info-block">
+            <img class=post-image src="https://vision-assistant.netlify.app//img/helmut-lang-home-pasternak/photo_2021-03-01_20-45-02.jpg" alt="Photo for Helmut at home">
+        </div>
+
+        <div class="info-block">
+            <img class=post-image src="https://vision-assistant.netlify.app//img/helmut-lang-home-pasternak/photo_2021-03-01_20-45-05.jpg" alt="Photo for Helmut at home">
+        </div>
+
+    </div>
+
+{% endblock %}

@@ -1,0 +1,92 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>
+        {% block title %}
+            Base
+        {% endblock %}
+    </title>
+
+    <link rel="icon" href="{{ url_for('static', filename='favicon_io/favicon.ico') }}">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+
+<header class="header">
+    <div class="content-header">
+        <div class="limit-header">
+            <a href="{{ url_for("index") }}"
+               class="main_logo_title"
+               title="Visual Assistant — блог о моде, искусстве и фотографии">Visual<br>Assistant
+            </a>
+            <ul class="menu">
+
+                <li class="menu-point">
+                    <a class="menu-link link1  {% if theme_en=='photo' %} theme-photo {% endif %}"
+                       href="{{ url_for("post_app.posts_theme", theme_en='photo') }}">фото</a>
+                </li>
+
+                <li class="menu-point"><div class="menu-splitter">|</div></li>
+
+                <li class="menu-point">
+                    <a class="menu-link link2 {% if theme_en=='fashion' %} theme-fashion {% endif %}"
+                       href="{{ url_for("post_app.posts_theme", theme_en='fashion') }}">мода</a>
+                </li>
+
+                <li class="menu-point"><div class="menu-splitter">|</div></li>
+
+                <li class="menu-point">
+                    <a class="menu-link link3 {% if theme_en=='art' %} theme-art {% endif %}"
+                       href="{{ url_for("post_app.posts_theme", theme_en='art') }}">искусство</a></li>
+
+                <li class="menu-point"><div class="menu-splitter">|</div></li>
+
+                <li class="menu-point">
+                    <a class="menu-link link4 {% if theme_en=='all' %} theme-all {% endif %}"
+                       href="{{ url_for("post_app.posts_list") }}">всё</a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+
+
+<section class=content>
+    {% block content %}
+        <h1>Base content</h1>
+    {% endblock %}
+</section>
+
+<div class="marquee">
+    <span>Оставайтесь на связи</span>
+    <span>Оставайтесь на связи</span>
+    <span>Оставайтесь на связи</span>
+    <span>Оставайтесь на связи</span>
+    <span>Оставайтесь на связи</span>
+    <span>Оставайтесь на связи</span>
+</div>
+
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-message">
+            <h2 class="footer-header">Контакты</h2>
+            <span>admin@visualass.com</span>
+            <span>
+                <a class="footer-link link-tg" href="https://t.me/maksimovv" target="_blank">TG</a>
+                <a class="footer-link link-ig" href="https://www.instagram.com" target="_blank">IG</a>
+            </span>
+            <span>Visual Assistant 2021</span>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

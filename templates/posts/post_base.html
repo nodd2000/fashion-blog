@@ -1,0 +1,14 @@
+{% extends 'index_base.html' %}
+
+<section class=content-post>
+    {% block content %}
+        {% block post_info %}
+            <div class="post-info">
+                <h2 class="post-title post-header">{{ post.title }}</h2>
+                {% include 'author_info.html' %}
+            </div>
+        {% endblock %}
+    {% endblock %}
+</section>
+
+

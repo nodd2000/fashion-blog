@@ -1,0 +1,24 @@
+{% extends 'index_base.html' %}
+
+{% block title %}
+    Visual Assistant - Users
+{% endblock %}
+
+{% block content %}
+    {% for user in users %}
+            <div class=post>
+
+                <div class="author-info">
+                    <a class="post-link" href="{{ url_for('user_app.user_detail', user_id=user.id)}}">
+                        <img class="post-author-img" src={{ user.userpic }}>
+                    </a>
+
+                    <a class="post-link" href="{{ url_for('user_app.user_detail', user_id=user.id) }}">
+                    <h2 class=post-author>{{user.name }} {{ user.surname }}</h2>
+                    </a>
+                </div>
+
+            </div>
+    {% endfor %}
+
+{% endblock %}

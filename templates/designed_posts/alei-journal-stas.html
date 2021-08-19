@@ -1,0 +1,56 @@
+{% extends './posts/post_base.html' %}
+
+{% block title %}
+    {{ post.title }}
+{% endblock %}
+
+{% block content %}
+    {% block post_info %}
+        {{ super() }}
+    {% endblock %}
+
+    <div class="info-blocks">
+        <div class="info-block">
+            <p class="post-text">Cтас Калашников - российский фотограф и режиссер, проживающий в Париже.</p>
+            <p class="post-text">
+                alei journal - это коллекция портфолио и интервью художников,
+                свободных произведений от поэзии до художественной литературы и многочисленных серий фотографий,
+                представленных международными фотографами. Каждый вкладчик волен вкладывать свое пространство по своему усмотрению,
+                и журнал намерен работать как выставочное издание.
+            </p>
+            <p class="post-text">
+                Через призму естественной идентичности света, цветов и лексики alei journal исследует такие темы,
+                как близость, индивидуальность и телесные отношения. Отсутствие фильтров и ретуши,
+                а также полная свобода творчества предлагают авторам журнала подлинную зону самовыражения и чувствительности.
+            </p>
+        </div>
+
+        <div class="info-block">
+            <img class=post-image src="https://vision-assistant.netlify.app//img/alei-journal-stas/-7_alejournal_StasKalashnikov2_800.jpg" alt="photo Stas Kalashnikov for alejournal">
+        </div>
+
+        <div class="info-block">
+            <img class=post-image src="https://vision-assistant.netlify.app//img/alei-journal-stas/-7_alejournal_StasKalashnikov5_800.jpg" alt="photo Stas Kalashnikov for alejournal">
+        </div>
+
+        <div class="info-block">
+            <img class=post-image src="https://vision-assistant.netlify.app//img/alei-journal-stas/-7_alejournal_StasKalashnikov6_800.jpg" alt="photo Stas Kalashnikov for alejournal">
+        </div>
+
+        <div class="info-block">
+            <img class=post-image src="https://vision-assistant.netlify.app//img/alei-journal-stas/-7_alejournal_StasKalashnikov7_800.jpg" alt="photo Stas Kalashnikov for alejournal">
+        </div>
+
+        <div class="info-block">
+            <img class=post-image src="https://vision-assistant.netlify.app//img/alei-journal-stas/-7_alejournal_StasKalashnikov9_800.jpg" alt="photo Stas Kalashnikov for alejournal">
+        </div>
+
+        <div class="info-block">
+            <img class=post-image src="https://vision-assistant.netlify.app//img/alei-journal-stas/-7_alejournal_StasKalashnikov11_800.jpg" alt="photo Stas Kalashnikov for alejournal">
+        </div>
+
+        <div class="info-block">
+            <img class=post-image src="https://vision-assistant.netlify.app//img/alei-journal-stas/stas-kalashnikov-main.jpg" alt="photo Stas Kalashnikov for alejournal">
+        </div>
+    </div>
+{% endblock %}

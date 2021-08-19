@@ -1,0 +1,48 @@
+{% extends './posts/post_base.html' %}
+
+{% block title %}
+    {{ post.title }}
+{% endblock %}
+
+{% block content %}
+    {% block post_info %}
+        {{ super() }}
+    {% endblock %}
+
+    <div class="info-blocks">
+        <div class="info-block">
+            <p class="post-text">
+                В этом году исполнилось 82 года Дэвиду Хокни — одному из самых влиятельных и дерзких британских художников двадцатого века и ключевой фигуре движения поп-арта,
+                который одним из первых открыто заговорил на языке живописи и фотографии об однополой любви.
+                От фотоколлажей и оперных афиш до вдохновленных кубизмом абстракций и деревенских пейзажей:
+                за более чем шестидесятилетнюю карьеру Хокни успел попробовать себя в самых разных жанрах и направлениях.
+                Решительно шагнувший в век технологий легендарный художник и сегодня продолжает искать и находить новые способы выражения,
+                оставаясь при этом все тем же бунтарём верным своей любви к ярким краскам и смелым композициям.
+            </p>
+        </div>
+
+        <div class="info-block">
+            <img class=post-image src="https://vision-assistant.netlify.app//img/david-hockney/Hockney.jpg" alt="Photo of piece of art David Hockney by Mark Mahaney">
+        </div>
+
+        <div class="info-block">
+            <img class=post-image src="https://vision-assistant.netlify.app//img/david-hockney/david-hockney-main.jpg" alt="Photo of David Hockney by Mark Mahaney">
+        </div>
+
+        <div class="info-block">
+            <img class=post-image src="https://vision-assistant.netlify.app//img/david-hockney/h1200_mark_mahaney_18742c7c.jpg" alt="Photo of David Hockney by Mark Mahaney">
+        </div>
+
+        <div class="info-block">
+            <img class=post-image src="https://vision-assistant.netlify.app//img/david-hockney/h1200_mark_mahaney_12c3b0b4.jpg" alt="Photo of David Hockney by Mark Mahaney">
+        </div>
+
+        <div class="info-block">
+            <img class=post-image src="https://vision-assistant.netlify.app//img/david-hockney/h1200_mark_mahaney_e0a504fa.jpg" alt="Photo of David Hockney by Mark Mahaney">
+        </div>
+
+        <div class="info-block">
+            <img class=post-image src="https://vision-assistant.netlify.app//img/david-hockney/h1200_mark_mahaney_cb5d8dc5.jpg" alt="Photo of David Hockney by Mark Mahaney">
+        </div>
+    </div>
+{% endblock %}

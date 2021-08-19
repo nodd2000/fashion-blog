@@ -1,0 +1,48 @@
+{% extends './posts/post_base.html' %}
+
+{% block title %}
+    {{ post.title }}
+{% endblock %}
+
+{% block content %}
+    {% block post_info %}
+        {{ super() }}
+    {% endblock %}
+
+    <div class="info-blocks">
+        <div class="info-block">
+            <p class="post-text">В Париже прошел показ Saint Laurent осень–зима 2020/2021.
+                Шоу в очередной раз прошло на площади Трокадеро, на фоне Эйфелевой башни — и под тяжелые биты французского электронного музыканта SebastiAn,
+                который пишет треки для шоу и рекламных кампаний бренда с 2017-го.
+                А главным героем шоу стал латекс — материал со сложной историей, которому Энтони Ваккарелло буквально подарил новую, благородную жизнь.
+            </p>
+        </div>
+        <div class="info-block">
+            <img class=post-image src="https://vision-assistant.netlify.app//img/ysl-fw21/093e814d2f9647100deb7e47672a8fec_3482.jpg" alt="Photo Saint Laurent Campaign">
+        </div>
+        <div class="info-block">
+            <img class=post-image src="https://vision-assistant.netlify.app//img/ysl-fw21/saint-laurent-main.jpg" alt="Photo Saint Laurent Campaign">
+        </div>
+        <div class="info-block">
+            <img class=post-image src="https://vision-assistant.netlify.app//img/ysl-fw21/3a87b6f2225fd746fa42af2c3297764e_3482.jpg" alt="Photo Saint Laurent Campaign">
+        </div>
+        <div class="info-block">
+            <img class=post-image src="https://vision-assistant.netlify.app//img/ysl-fw21/8d5d6b920deab1bf0ebfe01bc4e076de_3482.jpg" alt="Photo Saint Laurent Campaign">
+        </div>
+        <div class="info-block">
+            <img class=post-image src="https://vision-assistant.netlify.app//img/ysl-fw21/8702d6a6ff7c80ff9535637feca4c200_3482.jpg" alt="Photo Saint Laurent Campaign">
+        </div>
+        <div class="info-block">
+            <img class=post-image src="https://vision-assistant.netlify.app//img/ysl-fw21/737c10572178e5cb40ad1084d4017e00_3482.jpg" alt="Photo Saint Laurent Campaign">
+        </div>
+        <div class="info-block">
+            <img class=post-image src="https://vision-assistant.netlify.app//img/ysl-fw21/a12cd451ce76abd1886d0b914cd0fd94_3482.jpg" alt="Photo Saint Laurent Campaign">
+        </div>
+        <div class="info-block">
+            <img class=post-image src="https://vision-assistant.netlify.app//img/ysl-fw21/c3c61bb696658760e65f6ed6b49f3b3a_3482.jpg" alt="Photo Saint Laurent Campaign">
+        </div>
+        <div class="info-block">
+            <img class=post-image src="https://vision-assistant.netlify.app//img/ysl-fw21/ebc029f948a4ea2596e65378eb2e1716_3482.jpg" alt="Photo Saint Laurent Campaign">
+        </div>
+    </div>
+{% endblock %}

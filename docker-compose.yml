@@ -1,0 +1,13 @@
+version: "3.5"
+
+services: 
+  blog:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    # volumes:
+    #   - ./src:/var/app/src
+    #   - ./public:/var/app/public
+    ports: 
+      - 5000:5000
+  
